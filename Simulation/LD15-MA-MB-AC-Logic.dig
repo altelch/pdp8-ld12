@@ -603,44 +603,6 @@
       <pos x="2440" y="400"/>
     </visualElement>
     <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Description</string>
-          <string>WRITE = (CP1H ∧ ¬DEP) ∨ (CP1H ∧ ¬ISZ) ∨ (CP1H ∧ ¬LDM) ∨ (CP1H ∧ ¬JMS) ∨ (CP1H ∧ ¬DCA) ∨ ¬F7
-
-FF_MB(L) = (¬CP0L ∧ ¬LDMB) ∨ (¬CP0L ∧ ¬DEP) ∨ (¬CP0L ∧ ¬ISZ) ∨ (¬CP0L ∧ ¬LDM) ∨ (¬CP0L ∧ ¬JMS) ∨ 
-                    (¬CP0L ∧ ¬DCA) ∨ ¬F10 ∨ ¬F5 ∨ ¬F7
-
-FF_MA(L) = ¬((DEP+EX)*CP6) ∨ ¬A3 ∨ (CP0H ∧ ¬LDMA) ∨ ¬F0 ∨ ¬F3 ∨ ¬F8
-
-OPG2_H = ¬OPG2L
-
-OPG1_H*CP3*IR11 = ¬CP3H ∨ ¬IR11 ∨ ¬OPG1H
-
-AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ ¬CP3H ∧ ¬IR6 ∧ ¬IR9 ∧ LDAC ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ ¬IR11 ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ ¬IR11 ∧ ¬IR6 ∧ ¬IR9 ∧ LDAC ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ LDAC ∧ ¬OPG1H ∧ OPG2L ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ ¬IR9 ∧ LDAC ∧ ¬OPG1H ∧ RDE ∧ TAD) ∨ 
-              (AND ∧ ¬CP2H ∧ ¬CP3H ∧ LDAC ∧ TAD) ∨ 
-              (AND ∧ ¬CP2H ∧ ¬IR11 ∧ LDAC ∧ TAD) ∨ 
-              (AND ∧ ¬CP2H ∧ LDAC ∧ ¬OPG1H ∧ TAD) ∨ 
-              (¬CP0H ∧ ¬CP3H ∧ ¬IR6 ∧ OPG2L ∧ RDE) ∨ 
-              (¬CP0H ∧ ¬CP3H ∧ ¬IR6 ∧ ¬IR9 ∧ RDE) ∨ 
-              (¬CP0H ∧ ¬IR11 ∧ ¬IR6 ∧ OPG2L ∧ RDE) ∨
-              (¬CP0H ∧ ¬IR11 ∧ ¬IR6 ∧ ¬IR9 ∧ RDE) ∨ 
-              (¬CP0H ∧ ¬OPG1H ∧ OPG2L ∧ RDE) ∨ 
-              (¬CP0H ∧ ¬IR9 ∧ ¬OPG1H ∧ RDE) ∨
-              (¬CP0H ∧ ¬CP2H ∧ ¬CP3H) ∨ 
-              (¬CP0H ∧ ¬CP2H ∧ ¬IR11) ∨
-              (¬CP0H ∧ ¬CP2H ∧ ¬OPG1H)</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1800" y="600"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -793,24 +755,6 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
       <pos x="1220" y="580"/>
     </visualElement>
     <visualElement>
-      <elementName>Rectangle</elementName>
-      <elementAttributes>
-        <entry>
-          <string>RectHeight</string>
-          <int>46</int>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>Equotations</string>
-        </entry>
-        <entry>
-          <string>RectWidth</string>
-          <int>68</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1740" y="580"/>
-    </visualElement>
-    <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
@@ -841,8 +785,12 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
           <string>Label</string>
           <string>RDE</string>
         </entry>
+        <entry>
+          <string>isHighZ</string>
+          <boolean>true</boolean>
+        </entry>
       </elementAttributes>
-      <pos x="2280" y="340"/>
+      <pos x="1880" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -857,6 +805,51 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
         </entry>
       </elementAttributes>
       <pos x="1660" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>RDE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1920" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>RDE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="2300" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>PullUp</elementName>
+      <elementAttributes/>
+      <pos x="1900" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Support multiple devices using 
+RDE to load Data into AC by
+supporting Tri-State.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1940" y="0"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -1005,7 +998,7 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
       <p2 x="1480" y="980"/>
     </wire>
     <wire>
-      <p1 x="2280" y="340"/>
+      <p1 x="2300" y="340"/>
       <p2 x="2320" y="340"/>
     </wire>
     <wire>
@@ -1277,6 +1270,14 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
       <p2 x="2180" y="380"/>
     </wire>
     <wire>
+      <p1 x="1880" y="60"/>
+      <p2 x="1900" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="60"/>
+      <p2 x="1920" y="60"/>
+    </wire>
+    <wire>
       <p1 x="640" y="840"/>
       <p2 x="640" y="900"/>
     </wire>
@@ -1335,6 +1336,10 @@ AC(L) = (AND ∧ ¬CP3H ∧ ¬IR6 ∧ LDAC ∧ OPG2L ∧ RDE ∧ TAD) ∨
     <wire>
       <p1 x="1900" y="180"/>
       <p2 x="1900" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1900" y="40"/>
+      <p2 x="1900" y="60"/>
     </wire>
     <wire>
       <p1 x="1040" y="520"/>

@@ -725,48 +725,6 @@
       </elementAttributes>
       <pos x="460" y="880"/>
     </visualElement>
-    <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>textFontSize</string>
-          <int>12</int>
-        </entry>
-        <entry>
-          <string>Description</string>
-          <string>B2 = (!CP0L * !(MANSW*!EX*!RUN)) + (CP2H * OPG2H) + (!CP2L * !IOT) + !F1 + !F10 + !F3 + !F5</string>
-        </entry>
-      </elementAttributes>
-      <pos x="360" y="1300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>textFontSize</string>
-          <int>12</int>
-        </entry>
-        <entry>
-          <string>Description</string>
-          <string>B1 = !((DEP+EX)*CP6) + (!CP0L * !JMP) + (!CP0L * !DCA) + (CP2H * OPG1H) + (!CP2L * !JMS) + !F1 + !F10 + !F3 + !F5 + !(OPG1*CP3)</string>
-        </entry>
-      </elementAttributes>
-      <pos x="360" y="1320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>textFontSize</string>
-          <int>12</int>
-        </entry>
-        <entry>
-          <string>Description</string>
-          <string>B0 = ((!AND+!ISZ+!TAD) * CP0H) + (!CP0L * !DCA) + (!CP0L * !(MANSW*!EX*!RUN)) + (CP2H * OPG2H) + (CP2H * OPG1H) + !F3 + !F7 + !F8 + !(OPG1*CP3)</string>
-        </entry>
-      </elementAttributes>
-      <pos x="360" y="1340"/>
-    </visualElement>
   </visualElements>
   <wires>
     <wire>

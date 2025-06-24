@@ -407,46 +407,6 @@
       <pos x="1660" y="740"/>
     </visualElement>
     <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>textFontSize</string>
-          <int>12</int>
-        </entry>
-        <entry>
-          <string>Description</string>
-          <string>S0 = (!AND * !CP0L) + (!CP0L * !TAD)
-S1 = (!AND * !CP0L) + (!CP2L * OPG2L) + (!CP2L * IOT)
-S2 = (!CP2L * OPG2L) + (!CP2L *IOT)
-S3 = (!AND * !CP0L) + (!CP0L * !TAD) + (!CP2L * OPG2L) + (!CP2L * IOT)
-
-MODE = (!AND * !CP0L) + (!CP2L * !OPG1L) + (!CP2L * OPG2L) + (!CP2L * IOT)
-
-(DEP+EX)*CP6 = !((DEP+EX)*!RUN) + !CP6H
-
-OPG1*CP3 = !CP3L + !OPG1H
-
-CIN = (!((DEP+EX)*!RUN) * !CP3L * F2 * F7 * IOT * ISZ * JMS * OPG2L) +
-           (!((DEP+EX)*!RUN) * CP2L * !CP3L * F2 * F7 * IOT * ISZ * OPG2L) + 
-           (!((DEP+EX)*!RUN) * F2 * F7 * IOT * ISZ * JMS * !OPG1L * OPG2L) +
-           (!((DEP+EX)*!RUN) * CP2L * F2 * F7 * IOT * ISZ * !OPG1L * OPG2L) + 
-           (!((DEP+EX)*!RUN) * CP0L * !CP3L * F2 * F7 * ISZ * JMS) +
-           (!((DEP+EX)*!RUN) * CP0L * F2 * F7 * ISZ * JMS * !OPG1L) +
-           (!((DEP+EX)*!RUN) * CP0L * CP2L * !CP3L * F2 * F7) +
-           (!((DEP+EX)*!RUN) * CP0L * CP2L * F2 * F7 * !OPG1L) + 
-           (CP0L * !CP3L * !CP6H * F2 * F7 * ISZ * JMS) + 
-           (CP0L * !CP6H * F2 * F7 * ISZ * JMS * !OPG1L) + 
-           (CP0L * CP2L * !CP3L * !CP6H * F2 * F7) +
-           (CP0L * CP2L * !CP6H * F2 * F7 * !OPG1L) +
-           (CP2L * !CP3L * !CP6H * F2 * F7 * IOT * ISZ * OPG2L) +
-           (CP2L * !CP6H * F2 * F7 * IOT * ISZ * !OPG1L * OPG2L) + 
-           (!CP3L * !CP6H * F2 * F7 * IOT * ISZ * JMS * OPG2L) + 
-           (!CP6H * F2 * F7 * IOT * ISZ * JMS * !OPG1L * OPG2L)</string>
-        </entry>
-      </elementAttributes>
-      <pos x="1860" y="120"/>
-    </visualElement>
-    <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>

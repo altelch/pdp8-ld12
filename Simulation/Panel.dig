@@ -12,6 +12,10 @@
       <string>preloadProgram</string>
       <boolean>true</boolean>
     </entry>
+    <entry>
+      <string>preloadProgramFile</string>
+      <file>../Images/focal8.hex</file>
+    </entry>
   </attributes>
   <visualElements>
     <visualElement>
